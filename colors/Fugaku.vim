@@ -35,3 +35,36 @@ if exists('g:fugaku_use_terminal_colors') && g:fugaku_use_terminal_colors == 1
  unlet p
 endif
 
+function! s:X(group, fg, bg) abort
+  let l:fg_exists = !empty(a:fg)
+  let l:bg_exists = !empty(a:bg)
+
+
+  if l:fg_exists && l:bg_exists
+    let l:ctermfg = s:palette[a:fg]['cterm']
+    let l:ctermbg = s:palette[a:bg]['cterm']
+    let l:guifg = s:palette[a:fg]['gui']
+    let l:guibg = s:palette[a:bg]['gui']
+  elseif l:fg_exists && !l:bg_exists
+    let l:ctermfg = s:palette[a:fg]['cterm']
+    let l:ctermbg = 'NONE'
+    let l:guifg = s:palette[a:fg]['gui']
+    let l:guibg = 'NONE'
+  elseif !l:fg_exists && l:bg_exists
+    let l:ctermfg = 'NONE'
+    let l:ctermbg = s:palette[a:bg]['cterm']
+    let l:guifg = 'NONE'
+    let l:guibg = s:palette[a:bg]['gui']
+  else
+    let l:ctermfg = 'NONE'
+    let l:ctermbg = 'NONE'
+    let l:guifg = 'NONE'
+    let l:guibg = 'NONE'
+  endif
+
+  execute 'hi '.a:group.' ctermfg='.l:ctermfg.' ctermbg='.l:ctermbg.
+  \                     ' guifg='.l:guifg.    ' guibg='.l:guibg
+endfunction
+
+
+delfunction s:X

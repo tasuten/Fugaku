@@ -30,9 +30,9 @@ if exists('g:fugaku_use_terminal_colors') && g:fugaku_use_terminal_colors == 1
   for color in keys(p)
     let p[color]['cterm'] = color
   endfor
- let s:palette = p
- unlet color
- unlet p
+  let s:palette = p
+  unlet color
+  unlet p
 endif
 
 

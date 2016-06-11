@@ -14,8 +14,8 @@ endif
 
 let s:palette = {
 \ 'black':     { 'gui': '#0d0d0d', 'cterm': '232' },
-\ 'darkgray':  { 'gui': '#3f493e', 'cterm': '59'  },
-\ 'lightgray': { 'gui': '#a29a8f', 'cterm': '102' },
+\ 'darkgray':  { 'gui': '#3f493e', 'cterm': '237' },
+\ 'lightgray': { 'gui': '#a29a8f', 'cterm': '247' },
 \ 'white':     { 'gui': '#f5efd9', 'cterm': '230' },
 \ 'red':       { 'gui': '#ce2b1f', 'cterm': '160' },
 \ 'green':     { 'gui': '#8a9c48', 'cterm': '107' },

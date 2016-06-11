@@ -35,6 +35,11 @@ if exists('g:fugaku_use_terminal_colors') && g:fugaku_use_terminal_colors == 1
  unlet p
 endif
 
+
+if !exists('g:fugaku_use_terminal_background_color')
+  let g:fugaku_use_terminal_background_color = 0
+endif
+
 function! s:X(group, fg, bg) abort
   let l:fg_exists = !empty(a:fg)
   let l:bg_exists = !empty(a:bg)
@@ -66,5 +71,10 @@ function! s:X(group, fg, bg) abort
   \                     ' guifg='.l:guifg.    ' guibg='.l:guibg
 endfunction
 
+if g:fugaku_use_terminal_background_color
+  call s:X('Normal', 'white', '')
+else
+  call s:X('Normal', 'white', 'black')
+endif
 
 delfunction s:X

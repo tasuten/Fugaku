@@ -25,3 +25,13 @@ let s:palette = {
 \ 'cyan':      { 'gui': '#42b1e6', 'cterm': '74' },
 \}
 
+if exists('g:fugaku_use_terminal_colors') && g:fugaku_use_terminal_colors == 1
+  let p = copy(s:palette)
+  for color in keys(p)
+    let p[color]['cterm'] = color
+  endfor
+ let s:palette = p
+ unlet color
+ unlet p
+endif
+

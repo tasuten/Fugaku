@@ -40,10 +40,10 @@ if !exists('g:fugaku_use_terminal_background_color')
   let g:fugaku_use_terminal_background_color = 0
 endif
 
-function! s:X(group, fg, bg) abort
+function! s:X(group, fg, bg, attr) abort
   let l:fg_exists = !empty(a:fg)
   let l:bg_exists = !empty(a:bg)
-
+  let l:attr_exists = !empty(a:attr)
 
   if l:fg_exists && l:bg_exists
     let l:ctermfg = s:palette[a:fg]['cterm']
@@ -67,14 +67,21 @@ function! s:X(group, fg, bg) abort
     let l:guibg = 'NONE'
   endif
 
+  if l:attr_exists
+    let l:attr = a:attr
+  else
+    let l:attr = 'NONE'
+  endif
+
   execute 'hi '.a:group.' ctermfg='.l:ctermfg.' ctermbg='.l:ctermbg.
-  \                     ' guifg='.l:guifg.    ' guibg='.l:guibg
+  \                     ' guifg='.l:guifg.    ' guibg='.l:guibg.
+  \                     ' cterm='.l:attr.     ' gui='.l:attr
 endfunction
 
 if g:fugaku_use_terminal_background_color
-  call s:X('Normal', 'white', '')
+  call s:X('Normal', 'white', '', '')
 else
-  call s:X('Normal', 'white', 'black')
+  call s:X('Normal', 'white', 'black', '')
 endif
 
 delfunction s:X

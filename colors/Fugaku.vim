@@ -25,6 +25,10 @@ let s:palette = {
 \ 'cyan':      { 'gui': '#42b1e6', 'cterm': '74' },
 \}
 
+" If the value is true(1), it uses terminal emulator's colors.
+" Cterm-colors in s:palette are nearby colors, not real colors
+" If you can edit the terminal-emulator's color palette
+" and you'd like to use real colors, use below option
 if exists('g:fugaku_use_terminal_colors') && g:fugaku_use_terminal_colors == 1
   let p = copy(s:palette)
   for color in keys(p)

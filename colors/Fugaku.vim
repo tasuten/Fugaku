@@ -45,21 +45,21 @@ if !exists('g:fugaku_use_terminal_background_color')
 endif
 
 function! s:X(group, fg, bg, attr) abort
-  let l:fg_exists = !empty(a:fg)
-  let l:bg_exists = !empty(a:bg)
-  let l:attr_exists = !empty(a:attr)
+  let l:fg_assigned = !empty(a:fg)
+  let l:bg_assigned = !empty(a:bg)
+  let l:attr_assigned = !empty(a:attr)
 
-  if l:fg_exists && l:bg_exists
+  if l:fg_assigned && l:bg_assigned
     let l:ctermfg = s:palette[a:fg]['cterm']
     let l:ctermbg = s:palette[a:bg]['cterm']
     let l:guifg = s:palette[a:fg]['gui']
     let l:guibg = s:palette[a:bg]['gui']
-  elseif l:fg_exists && !l:bg_exists
+  elseif l:fg_assigned && !l:bg_assigned
     let l:ctermfg = s:palette[a:fg]['cterm']
     let l:ctermbg = 'NONE'
     let l:guifg = s:palette[a:fg]['gui']
     let l:guibg = 'NONE'
-  elseif !l:fg_exists && l:bg_exists
+  elseif !l:fg_assigned && l:bg_assigned
     let l:ctermfg = 'NONE'
     let l:ctermbg = s:palette[a:bg]['cterm']
     let l:guifg = 'NONE'
@@ -71,7 +71,7 @@ function! s:X(group, fg, bg, attr) abort
     let l:guibg = 'NONE'
   endif
 
-  if l:attr_exists
+  if l:attr_assigned
     let l:attr = a:attr
   else
     let l:attr = 'NONE'

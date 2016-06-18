@@ -122,5 +122,26 @@ call s:X('Visual', 'black', 'white', '')
 call s:X('WarningMsg', 'red', '', '')
 call s:X('WildMenu', 'white', 'darkgray', '')
 
+call s:X('Comment', 'lightgray', '', '')
+call s:X('Constant', 'red', '', '')
+call s:X('String', 'cyan', '', '')
+call s:X('Character', 'yellow', '', '')
+call s:X('Number', 'magenta', '', '')
+call s:X('Boolean', 'yellow', '', '')
+
+call s:X('Identifier', 'green', '', '')
+call s:X('Function', 'blue', '', '')
+
+call s:X('Statement', 'blue', '', '')
+
+call s:X('PreProc', 'magenta', '', '')
+call s:X('Type', 'yellow', '', '')
+call s:X('Special', 'lightgray', '', '')
+
+call s:X('Underlined', '', '', 'underline')
+call s:X('Ignore', 'darkgray', '', '')
+call s:X('Error', 'red', '', '')
+call s:X('Todo', '', 'yellow', '')
+
 delfunction s:X
 

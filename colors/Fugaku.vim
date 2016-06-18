@@ -88,4 +88,39 @@ else
   call s:X('Normal', 'white', 'black', '')
 endif
 
+call s:X('Conceal', 'darkgray', '', '')
+call s:X('Cursor', '', '', 'reverse')
+hi CursorLine ctermfg=NONE ctermbg=233 guifg=NONE guibg=#121212 cterm=NONE gui=NONE
+call s:X('Directory', 'cyan', '', '')
+call s:X('DiffAdd', 'green', '', '')
+call s:X('DiffChange', 'blue', '', '')
+call s:X('DiffDelete', 'red', '', '')
+call s:X('ErrorMsg', 'red', '', '')
+call s:X('VertSplit', 'white', 'white', '')
+call s:X('Folded', 'white', 'darkgray', '')
+call s:X('IncSearch', '', 'white', '')
+call s:X('Search', '', 'lightgray', '')
+call s:X('LineNr', 'lightgray', '', '')
+hi CursorLineNr ctermfg=247 ctermbg=233 guifg=#a29a8f guibg=#121212 cterm=NONE gui=NONE
+call s:X('MatchParen', '', '', 'reverse')
+hi link ModeMsg Normal
+call s:X('MoreMsg', 'green', '', '')
+call s:X('NonText', 'darkgray', '', '')
+call s:X('Pmenu', 'white', 'darkgray', '')
+call s:X('PmenuSel', 'darkgray', 'white', '')
+call s:X('PmenuSbar', 'darkgray', 'darkgray', '')
+call s:X('PmenuThumb', 'white', 'white', '')
+call s:X('Question', 'green', '', '')
+call s:X('SpecialKey', 'lightgray', '', '')
+call s:X('StatusLine', 'black', 'white', '')
+call s:X('StatusLineNC', 'lightgray', 'darkgray', '')
+call s:X('TabLine', 'lightgray', 'darkgray', '')
+call s:X('TabLineFill', '', 'black', '')
+call s:X('TabLineSel', 'black', 'white', '')
+call s:X('Title', 'blue', '', '')
+call s:X('Visual', 'black', 'white', '')
+call s:X('WarningMsg', 'red', '', '')
+call s:X('WildMenu', 'white', 'darkgray', '')
+
 delfunction s:X
+

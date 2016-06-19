@@ -8,7 +8,7 @@ let g:colors_name = 'Fugaku'
 set background=dark
 highlight clear
 
-if exists("syntax_on")
+if exists('syntax_on')
   syntax reset
 endif
 

@@ -111,7 +111,7 @@ call s:X('PmenuSel', 'darkgray', 'white', '')
 call s:X('PmenuSbar', 'darkgray', 'darkgray', '')
 call s:X('PmenuThumb', 'white', 'white', '')
 call s:X('Question', 'green', '', '')
-call s:X('SpecialKey', 'lightgray', '', '')
+call s:X('SpecialKey', 'darkgray', '', '')
 call s:X('StatusLine', 'black', 'white', '')
 call s:X('StatusLineNC', 'lightgray', 'darkgray', '')
 call s:X('TabLine', 'lightgray', 'darkgray', '')
@@ -122,19 +122,19 @@ call s:X('Visual', 'black', 'white', '')
 call s:X('WarningMsg', 'red', '', '')
 call s:X('WildMenu', 'white', 'darkgray', '')
 
-call s:X('Comment', 'lightgray', '', '')
 
 " syntax highlights
+hi Comment ctermfg=241 ctermbg=NONE guifg=#626262 guibg=NONE cterm=NONE gui=NONE
 call s:X('Constant', 'red', '', '')
 call s:X('String', 'cyan', '', '')
 call s:X('Character', 'yellow', '', '')
-call s:X('Number', 'magenta', '', '')
-call s:X('Boolean', 'yellow', '', '')
+call s:X('Number', 'red', '', '')
+call s:X('Boolean', 'red', '', '')
 
 call s:X('Identifier', 'green', '', '')
 call s:X('Function', 'blue', '', '')
 
-call s:X('Statement', 'blue', '', '')
+call s:X('Statement', 'magenta', '', '')
 
 call s:X('PreProc', 'magenta', '', '')
 call s:X('Type', 'yellow', '', '')

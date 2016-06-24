@@ -155,5 +155,8 @@ hi link vimGroup Constant
 hi link vimHiTerm Identifier
 hi link vimSpecial Special
 
+" vim-help
+hi link helpOption Statement
+
 delfunction s:X
 

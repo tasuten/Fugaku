@@ -39,7 +39,6 @@ if exists('g:fugaku_use_terminal_colors') && g:fugaku_use_terminal_colors == 1
   unlet p
 endif
 
-
 if !exists('g:fugaku_use_terminal_background_color')
   let g:fugaku_use_terminal_background_color = 0
 endif

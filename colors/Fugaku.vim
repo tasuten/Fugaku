@@ -145,5 +145,9 @@ call s:X('Ignore', 'darkgray', '', '')
 call s:X('Error', 'red', '', '')
 call s:X('Todo', '', 'yellow', '')
 
+" diff
+hi link diffAdded DiffAdd
+hi link diffRemoved DiffDelete
+
 delfunction s:X
 

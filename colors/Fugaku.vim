@@ -87,6 +87,7 @@ else
   call s:X('Normal', 'white', 'black', '')
 endif
 
+" Vim UI
 call s:X('Conceal', 'darkgray', '', '')
 call s:X('Cursor', '', '', 'reverse')
 hi CursorLine ctermfg=NONE ctermbg=233 guifg=NONE guibg=#121212 cterm=NONE gui=NONE
@@ -122,6 +123,8 @@ call s:X('WarningMsg', 'red', '', '')
 call s:X('WildMenu', 'white', 'darkgray', '')
 
 call s:X('Comment', 'lightgray', '', '')
+
+" syntax highlights
 call s:X('Constant', 'red', '', '')
 call s:X('String', 'cyan', '', '')
 call s:X('Character', 'yellow', '', '')

@@ -149,5 +149,11 @@ call s:X('Todo', '', 'yellow', '')
 hi link diffAdded DiffAdd
 hi link diffRemoved DiffDelete
 
+" Vim script
+hi link vimAutoEvent Identifier
+hi link vimGroup Constant
+hi link vimHiTerm Identifier
+hi link vimSpecial Special
+
 delfunction s:X
 

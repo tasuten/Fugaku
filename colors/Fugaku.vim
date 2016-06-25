@@ -135,6 +135,7 @@ call s:X('Identifier', 'green', '', '')
 call s:X('Function', 'blue', '', '')
 
 call s:X('Statement', 'magenta', '', '')
+call s:X('Operator', 'lightgray', '', '')
 
 call s:X('PreProc', 'magenta', '', '')
 call s:X('Type', 'yellow', '', '')

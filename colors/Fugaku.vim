@@ -193,5 +193,11 @@ hi link xmlTagName xmlTag
 hi link xmlEndTag xmlTag
 hi link xmlTag Statement
 
+" Markdown
+hi link markdownCode Comment
+hi link markdownCodeBlock Comment
+call s:X('markdownLinkText', 'cyan', '', 'underline')
+
+
 delfunction s:X
 

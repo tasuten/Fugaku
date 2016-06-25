@@ -173,5 +173,11 @@ hi link rubyClassVariable rubyClass
 call s:X('rubyInstanceVariable', 'blue', '', '')
 hi rubySymbol ctermfg=109 ctermbg=NONE guifg=#7fabb6 guibg=NONE cterm=NONE gui=NONE
 
+" Erlang
+hi link erlangAtom rubySymbol
+
+" Elixir
+hi link elixirAtom rubySymbol
+
 delfunction s:X
 

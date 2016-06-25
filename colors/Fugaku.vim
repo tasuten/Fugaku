@@ -198,6 +198,8 @@ hi link markdownCode Comment
 hi link markdownCodeBlock Comment
 call s:X('markdownLinkText', 'cyan', '', 'underline')
 
+" zsh
+call s:X('zshSubstDelim', 'yellow', '', '')
 
 delfunction s:X
 

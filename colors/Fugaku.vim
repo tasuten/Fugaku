@@ -179,5 +179,8 @@ hi link erlangAtom rubySymbol
 " Elixir
 hi link elixirAtom rubySymbol
 
+" Java
+hi link javaClassDecl rubyClass
+
 delfunction s:X
 

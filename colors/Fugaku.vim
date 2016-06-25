@@ -164,5 +164,14 @@ hi link helpOption Statement
 " Perl
 hi link perlSharpBang Comment
 
+" Ruby
+hi link rubySharpBang Comment
+call s:X('rubyClass', 'red', '', '')
+call s:X('rubyModule', 'green', '', '')
+call s:X('rubyDefine', 'cyan', '', '')
+hi link rubyClassVariable rubyClass
+call s:X('rubyInstanceVariable', 'blue', '', '')
+hi rubySymbol ctermfg=109 ctermbg=NONE guifg=#7fabb6 guibg=NONE cterm=NONE gui=NONE
+
 delfunction s:X
 

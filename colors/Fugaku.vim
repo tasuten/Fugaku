@@ -187,5 +187,11 @@ hi link htmlArg Identifier
 hi link htmlEndTag htmlTag
 hi link htmlTag Conceal
 
+" XML
+hi link xmlAttrib Identifier
+hi link xmlTagName xmlTag
+hi link xmlEndTag xmlTag
+hi link xmlTag Statement
+
 delfunction s:X
 

@@ -182,5 +182,10 @@ hi link elixirAtom rubySymbol
 " Java
 hi link javaClassDecl rubyClass
 
+" HTML
+hi link htmlArg Identifier
+hi link htmlEndTag htmlTag
+hi link htmlTag Conceal
+
 delfunction s:X
 

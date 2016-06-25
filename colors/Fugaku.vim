@@ -161,5 +161,8 @@ hi link vimSpecial Special
 " vim-help
 hi link helpOption Statement
 
+" Perl
+hi link perlSharpBang Comment
+
 delfunction s:X
 

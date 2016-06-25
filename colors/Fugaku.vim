@@ -201,5 +201,9 @@ call s:X('markdownLinkText', 'cyan', '', 'underline')
 " zsh
 call s:X('zshSubstDelim', 'yellow', '', '')
 
+" git
+call s:X('gitcommitBranch', 'cyan', '', '')
+hi link gitcommitSelectedType Conceal
+
 delfunction s:X
 

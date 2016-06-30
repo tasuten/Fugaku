@@ -4,7 +4,7 @@ The colorscheme inspired by Ukiyo-es
 ## Tasks
 - [x] Selecting colors
 - [x] iTerm2 theme
-- [ ] Vim colorscheme
+- [x] Vim colorscheme
 - [ ] Demo page by GitHub Pages
 
 ## What's the meaning of "Fugaku" ?

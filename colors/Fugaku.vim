@@ -208,11 +208,11 @@ hi link gitcommitSelectedType Conceal
 
 if exists('g:fugaku_customize')
   function! s:lambda() abort
-  for [ l:group, l:def ] in items(g:fugaku_customize)
-    for [ l:key, l:var ] in items(l:def)
-     execute 'hi '. l:group . ' ' .  l:key . '=' . l:var
+    for [ l:group, l:def ] in items(g:fugaku_customize)
+      for [ l:key, l:var ] in items(l:def)
+        execute 'hi '. l:group . ' ' .  l:key . '=' . l:var
+      endfor
     endfor
-  endfor
   endfunction
   call s:lambda()
   delfunction s:lambda

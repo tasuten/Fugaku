@@ -1,12 +1,6 @@
 # Fugaku
 The colorscheme inspired by Ukiyo-es
 
-## Tasks
-- [x] Selecting colors
-- [x] iTerm2 theme
-- [x] Vim colorscheme
-- [ ] Demo page by GitHub Pages
-
 ## What's the meaning of "Fugaku" ?
 **Fugaku** (富嶽) is another name of Mt. Fuji.
 

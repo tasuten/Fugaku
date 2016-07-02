@@ -18,7 +18,7 @@ And all colors of this colorscheme were picked from Ukiyo-e pictures.
 Issue, PullReq, or contact with me from [Twitter@tasuten](https://twitter.com/tasuten) in Japanese or English.
 
 ## License
-See LICENSE file.
+[The Unlicense](http://unlicense.org/). See LICENSE file.
 
 ## Related works
 - Japanesque

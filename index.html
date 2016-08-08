@@ -62,6 +62,33 @@
       <li id="cyan"></li>
     </ul>
 
+    <h2 >Install</h2>
+    <h3>iTerm2</h3>
+    <p>
+    Import &nbsp;<code><a href="https://raw.githubusercontent.com/tasuten/Fugaku/master/Fugaku.itermcolors">Fugaku.itermcolors</a></code>&nbsp;.
+    </p>
+    <h3>Vim</h3>
+    <pre><code>
+" Install by the way you'd like to. e.g.) Vundle, NeoBundle, vim-plug
+Plug 'tasuten/Fugaku'
+
+" If you'd like to set option variables, write them before `colorscheme Fugaku`
+" e.g.)
+" let g:fugaku_use_terminal_background_color = 1
+
+colorscheme Fugaku
+
+" If you'd also like to use lightline colorscheme
+" lightline.vim
+if !exists('g:lightline')
+  let g:lightline = {}
+endif
+let g:lightline.colorscheme = 'Fugaku'
+    </code></pre>
+
+    <h2>More details</h2>
+    <a href="https://github.com/tasuten/Fugaku">README.md</a>
+
     </main>
   </body>
 </html>

@@ -1,15 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Fugaku - colorscheme inspired by Ukiyo-es</title>
+    <title>Fugaku - Colorscheme inspired by Ukiyo-es</title>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="//fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" />
+    <link href="./main.css" rel="stylesheet" />
   </head>
+
+
   <body>
+
+
     <header>
+      <h1>Fugaku</h1>
+      <p>Coding with Japanese Ukiyo-es colors</p>
     </header>
+
+
+    <hr />
+
+
     <main>
+
+    <!-- GitHub ribbon -->
+    <a href="https://github.com/tasuten/Fugaku"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+
+
+    <h2>What's the &ldquo;Fugaku&rdquo; ?</h2>
+
+    <p>
+    <a href="https://github.com/tasuten/Fugaku">Fugaku</a>
+    is a colorscheme using colors that were picked from real Ukiyo-e pictures.
+    </p>
+    <p>The name &ldquo;<strong>Fugaku</strong>&rdquo;（<strong>富嶽</strong>） is another name of Mt. Fuji.<br />
+    And this word is picked from <cite><strong>Fugaku</strong> sanju-roku-kei</cite>（<strong>富嶽</strong>三十六景, Thirty-six Views of Mount Fuji）, the ukiyo-e series by Hokusai.</p>
+
+    <p><strong>Fugaku</strong> provides colorschemes for</p>
+    <ul>
+      <li>iTerm2</li>
+      <li>Vim (256-color) and GVim</li>
+    </ul>
+
+
+    <h2>Screenshots</h2>
+
+    <h3><code>git log</code>&nbsp; on iTerm2</h3>
+    <img src="./screenshots/git.png" class="screenshot" alt="SS on iTerm2"/>
+    <h3>Ruby</h3>
+    <img src="./screenshots/ruby.png" class="screenshot" alt="SS on Ruby"/>
+    <h3>Markdown</h3>
+    <img src="./screenshots/markdown.png" class="screenshot" alt="SS on Markdown"/>
+    <h3>Vim script</h3>
+    <img src="./screenshots/vim.png" class="screenshot" alt="SS on Vim script" />
+    <h3>Colorpalette</h3>
+    <ul id="palette">
+      <li id="black"></li>
+      <li id="darkgray"></li>
+      <li id="lightgray"></li>
+      <li id="white"></li>
+      <li id="red"></li>
+      <li id="green"></li>
+      <li id="yellow"></li>
+      <li id="blue"></li>
+      <li id="magenta"></li>
+      <li id="cyan"></li>
+    </ul>
+
+    <h2 >Install</h2>
+    <h3>iTerm2</h3>
+    <p>
+    Import &nbsp;<code><a href="https://raw.githubusercontent.com/tasuten/Fugaku/master/Fugaku.itermcolors">Fugaku.itermcolors</a></code>&nbsp;.
+    </p>
+    <h3>Vim</h3>
+    <pre><code>
+" Install by the way you'd like to. e.g.) Vundle, NeoBundle, vim-plug
+Plug 'tasuten/Fugaku'
+
+" If you'd like to set option variables, write them before `colorscheme Fugaku`
+" e.g.)
+" let g:fugaku_use_terminal_background_color = 1
+
+colorscheme Fugaku
+
+" If you'd also like to use lightline colorscheme
+" lightline.vim
+if !exists('g:lightline')
+  let g:lightline = {}
+endif
+let g:lightline.colorscheme = 'Fugaku'
+    </code></pre>
+
+    <h2>More details</h2>
+    <a href="https://github.com/tasuten/Fugaku">README.md</a>
+
     </main>
   </body>
 </html>

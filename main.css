@@ -27,3 +27,21 @@ code {
 img {
   max-width: 100%;
 }
+
+header {
+  text-align: center;
+  margin: 50px 0px 50px 0px;
+}
+
+header > h1 {
+  color: #f5efd9;
+  font-variant: small-caps;
+  margin-bottom: 25px;
+}
+
+hr {
+  margin: 0 7% 0 7%;
+  border: 0;
+  border-top: 3px double #626262;
+}
+

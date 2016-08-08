@@ -1,6 +1,8 @@
 # Fugaku
 The colorscheme inspired by Ukiyo-es
 
+You can see screenshots on [GitHub Pages](http://tasuten.github.io/Fugaku/)
+
 ## What's the meaning of "Fugaku" ?
 **Fugaku** (富嶽) is another name of Mt. Fuji.
 

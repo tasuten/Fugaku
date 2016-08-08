@@ -64,3 +64,30 @@ main ul li:before {
   margin: 0em 1em;
 }
 
+
+
+/* colorpalette */
+ul#palette li {
+  display: inline-block;
+}
+
+ul#palette li:before {
+  content: '\25a0'; /* filled square */
+  font-size: 170%;
+  margin: 0em 0.7em;
+}
+
+/* border only  */
+ul#palette li#black:before {
+  content: '\25a1'; /* empty square */
+  font-size: 170%;
+}
+ul#palette li#darkgray { color: #3f493e; }
+ul#palette li#lightgray { color: #a29a8f; }
+ul#palette li#red { color: #ab4645; }
+ul#palette li#green { color: #8a9c48; }
+ul#palette li#yellow { color: #e6bb2e; }
+ul#palette li#blue { color: #557c9b; }
+ul#palette li#magenta { color: #574376; }
+ul#palette li#cyan { color: #42b1e6; }
+

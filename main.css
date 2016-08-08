@@ -45,3 +45,22 @@ hr {
   border-top: 3px double #626262;
 }
 
+main {
+  margin: 0 7% 7% 7%;
+}
+
+main > h2 {
+  color: #f5efd9; /* white */
+  margin-top: 2em;
+}
+
+
+/* Use hyphens as bullets */
+main ul {
+  list-style: none;
+}
+main ul li:before {
+  content: '\2043'; /* hyphen bullet */
+  margin: 0em 1em;
+}
+

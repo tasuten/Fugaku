@@ -84,6 +84,7 @@ ul#palette li#black:before {
 }
 ul#palette li#darkgray { color: #3f493e; }
 ul#palette li#lightgray { color: #a29a8f; }
+ul#palette li#white { color: #f5efd9; }
 ul#palette li#red { color: #ab4645; }
 ul#palette li#green { color: #8a9c48; }
 ul#palette li#yellow { color: #e6bb2e; }

@@ -1,13 +1,13 @@
 let s:black     = [ '#0d0d0d', 232 ]
-let s:darkgray  = [ '#3f493e', 237 ]
-let s:lightgray = [ '#a29a8f', 247 ]
-let s:white     = [ '#f5efd9', 230 ]
-let s:red       = [ '#ab4645', 131 ]
-let s:green     = [ '#8a9c48', 107 ]
-let s:yellow    = [ '#e6bb2e', 178 ]
-let s:blue      = [ '#557c9b', 67  ]
-let s:magenta   = [ '#574376', 60  ]
-let s:cyan      = [ '#42b1e6', 74  ]
+let s:darkgray  = [ '#56564b', 59  ]
+let s:lightgray = [ '#988f86', 102 ]
+let s:white     = [ '#ede4cd', 230 ]
+let s:red       = [ '#f19072', 209 ]
+let s:green     = [ '#69821b', 64  ]
+let s:yellow    = [ '#ffec47', 227 ]
+let s:blue      = [ '#5a79ba', 67  ]
+let s:magenta   = [ '#745399', 96  ]
+let s:cyan      = [ '#0094c8', 32  ]
 
 
 let s:p = {'normal': {},  'inactive': {},  'insert': {},  'replace': {},  'visual': {},  'tabline': {}}

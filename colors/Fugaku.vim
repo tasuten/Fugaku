@@ -14,15 +14,15 @@ endif
 
 let s:palette = {
 \ 'black':     { 'gui': '#0d0d0d', 'cterm': '232' },
-\ 'darkgray':  { 'gui': '#3f493e', 'cterm': '237' },
-\ 'lightgray': { 'gui': '#a29a8f', 'cterm': '247' },
-\ 'white':     { 'gui': '#f5efd9', 'cterm': '230' },
-\ 'red':       { 'gui': '#ab4645', 'cterm': '131' },
-\ 'green':     { 'gui': '#8a9c48', 'cterm': '107' },
-\ 'yellow':    { 'gui': '#e6bb2e', 'cterm': '178' },
-\ 'blue':      { 'gui': '#557c9b', 'cterm': '67' },
-\ 'magenta':   { 'gui': '#574376', 'cterm': '60' },
-\ 'cyan':      { 'gui': '#42b1e6', 'cterm': '74' },
+\ 'darkgray':  { 'gui': '#56564b', 'cterm': '59' },
+\ 'lightgray': { 'gui': '#988f86', 'cterm': '102' },
+\ 'white':     { 'gui': '#ede4cd', 'cterm': '230' },
+\ 'red':       { 'gui': '#f19072', 'cterm': '209' },
+\ 'green':     { 'gui': '#69821b', 'cterm': '64' },
+\ 'yellow':    { 'gui': '#ffec47', 'cterm': '227' },
+\ 'blue':      { 'gui': '#5a79ba', 'cterm': '67' },
+\ 'magenta':   { 'gui': '#745399', 'cterm': '96' },
+\ 'cyan':      { 'gui': '#0094c8', 'cterm': '32' },
 \}
 
 " If the value is true(1), it uses terminal emulator's colors.
@@ -101,7 +101,7 @@ call s:X('Folded', 'white', 'darkgray', '')
 call s:X('IncSearch', '', 'white', '')
 call s:X('Search', '', 'lightgray', '')
 call s:X('LineNr', 'lightgray', '', '')
-hi CursorLineNr ctermfg=247 ctermbg=233 guifg=#a29a8f guibg=#121212 cterm=NONE gui=NONE
+hi CursorLineNr ctermfg=102 ctermbg=233 guifg=#988f86 guibg=#121212 cterm=NONE gui=NONE
 call s:X('MatchParen', '', '', 'reverse')
 hi link ModeMsg Normal
 call s:X('MoreMsg', 'green', '', '')

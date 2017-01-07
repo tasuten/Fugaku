@@ -1,10 +1,10 @@
-color,   normal, bright
-black,   0d0d0d, 3f493e
-red,     ab4645, c8785d
-green,   8a9c48, 80b891
-yellow,  e6bb2e, fff469
-blue,    557c9b, 7fabb6
-magenta, 574376, a789bd
-cyan,    42b1e6, ace4f1
-white,   a29a8f, f5efd9
+color,   normal, bright, name_normal, name_bright
+black,   0D0D0D, 56564B, 玄,          藍海松茶
+red,     F19072, F09199, 東雲色,      桃染
+green,   69821B, D8E698, 苔色,        若菜色
+yellow,  FE9C41, FFEC47, 大和柿,      菜の花色
+blue,    5A79BA, 698AAB, 薄花桜,      薄花色
+magenta, 745399, 9D5B8B, 江戸紫,      京紫
+cyan,    0094C8, A0D8EF, 薄藍,        空色
+white,   988F86, EDE4CD, 雉鳩色,      練色
 

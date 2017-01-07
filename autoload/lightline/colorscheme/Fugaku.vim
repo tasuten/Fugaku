@@ -22,8 +22,8 @@ let s:p.inactive.middle = [[ s:lightgray, s:darkgray  ]]
 let s:p.inactive.right  = [[ s:lightgray, s:darkgray  ]]
 
 let s:p.insert.left     = [[ s:white,     s:green     ]]
-let s:p.visual.left     = [[ s:white,     s:yellow    ]]
-let s:p.replace.left    = [[ s:white,     s:red       ]]
+let s:p.visual.left     = [[ s:darkgray,  s:yellow    ]]
+let s:p.replace.left    = [[ s:darkgray,  s:red       ]]
 
 
 let s:p.tabline.left    = [[ s:lightgray, s:darkgray  ]]

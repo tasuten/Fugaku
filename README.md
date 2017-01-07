@@ -1,5 +1,5 @@
 # Fugaku
-The colorscheme inspired by Ukiyo-es
+The colorscheme inspired by Japanese traditional colors 
 
 You can see screenshots on [GitHub Pages](http://tasuten.github.io/Fugaku/)
 
@@ -7,8 +7,6 @@ You can see screenshots on [GitHub Pages](http://tasuten.github.io/Fugaku/)
 **Fugaku** (富嶽) is another name of Mt. Fuji.
 
 I picked up this word from  *Fugaku sanju-roku-kei* (富嶽三十六景, Thirty-six Views of Mount Fuji), a ukiyo-e series by Hokusai.
-
-And all colors of this colorscheme were picked from Ukiyo-e pictures.
 
 
 ## Usage

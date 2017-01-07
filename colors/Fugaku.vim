@@ -13,16 +13,22 @@ if exists('syntax_on')
 endif
 
 let s:palette = {
-\ 'black':     { 'gui': '#0d0d0d', 'cterm': '232' },
-\ 'darkgray':  { 'gui': '#56564b', 'cterm': '59' },
-\ 'lightgray': { 'gui': '#988f86', 'cterm': '102' },
-\ 'white':     { 'gui': '#ede4cd', 'cterm': '230' },
-\ 'red':       { 'gui': '#f19072', 'cterm': '209' },
-\ 'green':     { 'gui': '#69821b', 'cterm': '64' },
-\ 'yellow':    { 'gui': '#ffec47', 'cterm': '227' },
-\ 'blue':      { 'gui': '#5a79ba', 'cterm': '67' },
-\ 'magenta':   { 'gui': '#745399', 'cterm': '96' },
-\ 'cyan':      { 'gui': '#0094c8', 'cterm': '32' },
+\ 'black':        { 'gui': '#0d0d0d', 'cterm': '232' },
+\ 'darkgray':     { 'gui': '#56564b', 'cterm': '59'  },
+\ 'lightgray':    { 'gui': '#988f86', 'cterm': '102' },
+\ 'white':        { 'gui': '#ede4cd', 'cterm': '230' },
+\ 'red':          { 'gui': '#f19072', 'cterm': '209' },
+\ 'lightred':     { 'gui': '#f09199', 'cterm': '210' },
+\ 'green':        { 'gui': '#69821b', 'cterm': '64'  },
+\ 'lightgreen':   { 'gui': '#d8e698', 'cterm': '186' },
+\ 'orange':       { 'gui': '#fe9c41', 'cterm': '215' },
+\ 'yellow':       { 'gui': '#ffec47', 'cterm': '227' },
+\ 'blue':         { 'gui': '#5a79ba', 'cterm': '67'  },
+\ 'lightblue':    { 'gui': '#698aab', 'cterm': '69'  },
+\ 'magenta':      { 'gui': '#745399', 'cterm': '96'  },
+\ 'lightmagenta': { 'gui': '#9d5b8b', 'cterm': '132' },
+\ 'cyan':         { 'gui': '#0094c8', 'cterm': '32'  },
+\ 'lightcyan':    { 'gui': '#a0d8ef', 'cterm': '153' },
 \}
 
 " If the value is true(1), it uses terminal emulator's colors.
@@ -90,7 +96,7 @@ endif
 " Vim UI
 call s:X('Conceal', 'darkgray', '', '')
 call s:X('Cursor', '', '', 'reverse')
-hi CursorLine ctermfg=NONE ctermbg=233 guifg=NONE guibg=#121212 cterm=NONE gui=NONE
+hi CursorLine ctermfg=NONE ctermbg=235 guifg=NONE guibg=#252424 cterm=NONE gui=NONE
 call s:X('Directory', 'cyan', '', '')
 call s:X('DiffAdd', 'green', '', '')
 call s:X('DiffChange', 'blue', '', '')
@@ -101,7 +107,7 @@ call s:X('Folded', 'white', 'darkgray', '')
 call s:X('IncSearch', '', 'white', '')
 call s:X('Search', '', 'lightgray', '')
 call s:X('LineNr', 'lightgray', '', '')
-hi CursorLineNr ctermfg=102 ctermbg=233 guifg=#988f86 guibg=#121212 cterm=NONE gui=NONE
+hi CursorLineNr ctermfg=102 ctermbg=235 guifg=#988f86 guibg=#252424 cterm=NONE gui=NONE
 call s:X('MatchParen', '', '', 'reverse')
 hi link ModeMsg Normal
 call s:X('MoreMsg', 'green', '', '')
@@ -124,27 +130,27 @@ call s:X('WildMenu', 'white', 'darkgray', '')
 
 
 " syntax highlights
-hi Comment ctermfg=241 ctermbg=NONE guifg=#626262 guibg=NONE cterm=NONE gui=NONE
+call s:X('Comment', 'darkgray', '', '')
 call s:X('Constant', 'red', '', '')
-call s:X('String', 'cyan', '', '')
-call s:X('Character', 'yellow', '', '')
-call s:X('Number', 'red', '', '')
+call s:X('String', 'lightcyan', '', '')
+call s:X('Character', 'lightmagenta', '', '')
+call s:X('Number', 'orange', '', '')
 call s:X('Boolean', 'red', '', '')
 
-call s:X('Identifier', 'green', '', '')
-call s:X('Function', 'blue', '', '')
+call s:X('Identifier', 'lightmagenta', '', '')
+call s:X('Function', 'orange', '', '')
 
-call s:X('Statement', 'magenta', '', '')
+call s:X('Statement', 'lightgreen', '', '')
 call s:X('Operator', 'lightgray', '', '')
 
-call s:X('PreProc', 'magenta', '', '')
-call s:X('Type', 'yellow', '', '')
+call s:X('PreProc', 'lightgray', '', '')
+call s:X('Type', 'magenta', '', '')
 call s:X('Special', 'lightgray', '', '')
 
 call s:X('Underlined', '', '', 'underline')
 call s:X('Ignore', 'darkgray', '', '')
 call s:X('Error', 'red', '', '')
-call s:X('Todo', '', 'yellow', '')
+call s:X('Todo', 'darkgray', 'yellow', '')
 
 " diff
 hi link diffAdded DiffAdd
@@ -171,7 +177,7 @@ call s:X('rubyModule', 'green', '', '')
 call s:X('rubyDefine', 'cyan', '', '')
 hi link rubyClassVariable rubyClass
 call s:X('rubyInstanceVariable', 'blue', '', '')
-hi rubySymbol ctermfg=109 ctermbg=NONE guifg=#7fabb6 guibg=NONE cterm=NONE gui=NONE
+call s:X('rubySymbol', 'blue', '', '')
 
 " Erlang
 hi link erlangAtom rubySymbol

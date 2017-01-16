@@ -1,5 +1,5 @@
 # Fugaku
-The colorscheme inspired by Ukiyo-es
+The colorscheme using Japanese Traditional Colors
 
 You can see screenshots on [GitHub Pages](http://tasuten.github.io/Fugaku/)
 
@@ -8,7 +8,7 @@ You can see screenshots on [GitHub Pages](http://tasuten.github.io/Fugaku/)
 
 I picked up this word from  *Fugaku sanju-roku-kei* (富嶽三十六景, Thirty-six Views of Mount Fuji), a ukiyo-e series by Hokusai.
 
-And all colors of this colorscheme were picked from Ukiyo-e pictures.
+All colors of this colorscheme were picked from [Japanese Traditional Colors](http://irocore.com/).
 
 
 ## Usage
@@ -44,8 +44,8 @@ if !exists('g:fugaku_customize')
   let g:fugaku_customize = {}
 endif
 let g:fugaku_customize.Visual = {
-\ 'ctermfg' : 249, 'ctermbg' : 130, 'cterm' : 'underline',
-\ 'guifg' : '#b2b2b2',  'guibg' : '#af5f00', 'gui': 'underline'
+\ 'ctermfg' : 42, 'ctermbg' : 142, 'cterm' : 'underline',
+\ 'guifg' : '#123456',  'guibg' : '#abcdef', 'gui': 'underline'
 \ }
 ```
 

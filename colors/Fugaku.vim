@@ -13,16 +13,16 @@ if exists('syntax_on')
 endif
 
 let s:palette = {
-\ 'black':     { 'gui': '#0d0d0d', 'cterm': '232' },
-\ 'darkgray':  { 'gui': '#3f493e', 'cterm': '237' },
-\ 'lightgray': { 'gui': '#a29a8f', 'cterm': '247' },
-\ 'white':     { 'gui': '#f5efd9', 'cterm': '230' },
-\ 'red':       { 'gui': '#ab4645', 'cterm': '131' },
-\ 'green':     { 'gui': '#8a9c48', 'cterm': '107' },
-\ 'yellow':    { 'gui': '#e6bb2e', 'cterm': '178' },
-\ 'blue':      { 'gui': '#557c9b', 'cterm': '67' },
-\ 'magenta':   { 'gui': '#574376', 'cterm': '60' },
-\ 'cyan':      { 'gui': '#42b1e6', 'cterm': '74' },
+\ 'black':     { 'gui': '#0C0C0C', 'cterm': '232' },
+\ 'darkgray':  { 'gui': '#595455', 'cterm': '59' },
+\ 'lightgray': { 'gui': '#BCB09C', 'cterm': '145' },
+\ 'white':     { 'gui': '#F7EFE3', 'cterm': '230' },
+\ 'red':       { 'gui': '#B23E52', 'cterm': '131' },
+\ 'green':     { 'gui': '#8CB155', 'cterm': '107' },
+\ 'yellow':    { 'gui': '#D9972F', 'cterm': '172' },
+\ 'blue':      { 'gui': '#6C9BD2', 'cterm': '74' },
+\ 'magenta':   { 'gui': '#8C6589', 'cterm': '96' },
+\ 'cyan':      { 'gui': '#7EC7D8', 'cterm': '116' },
 \}
 
 " If the value is true(1), it uses terminal emulator's colors.

@@ -1,10 +1,10 @@
-color,   normal, bright
-black,   0d0d0d, 3f493e
-red,     ab4645, c8785d
-green,   8a9c48, 80b891
-yellow,  e6bb2e, fff469
-blue,    557c9b, 7fabb6
-magenta, 574376, a789bd
-cyan,    42b1e6, ace4f1
-white,   a29a8f, f5efd9
+color,   normal, bright, normal_name, bright_name
+black,   0C0C0C, 595455, 呂色,        井鼠
+red,     B23E52, B15C65, 蘇芳香,      薄紅
+green,   8CB155, 9BCF97, 黄浅緑,      浅緑
+yellow,  D9972F, F3F47F, 狐色,        承和色
+blue,    6C9BD2, 9CC5E6, み空色,      勿忘草
+magenta, 8C6589, C08FB3, 古代紫,      京藤
+cyan,    7EC7D8, BCE1DF, 水縹,        薄水色
+white,   BCB09C, F7EFE3, 灰汁色,      生成色
 

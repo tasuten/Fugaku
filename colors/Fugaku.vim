@@ -13,16 +13,22 @@ if exists('syntax_on')
 endif
 
 let s:palette = {
-\ 'black':     { 'gui': '#0C0C0C', 'cterm': '232' },
-\ 'darkgray':  { 'gui': '#595455', 'cterm': '59' },
-\ 'lightgray': { 'gui': '#BCB09C', 'cterm': '145' },
-\ 'white':     { 'gui': '#F7EFE3', 'cterm': '230' },
-\ 'red':       { 'gui': '#B23E52', 'cterm': '131' },
-\ 'green':     { 'gui': '#8CB155', 'cterm': '107' },
-\ 'yellow':    { 'gui': '#D9972F', 'cterm': '172' },
-\ 'blue':      { 'gui': '#6C9BD2', 'cterm': '74' },
-\ 'magenta':   { 'gui': '#8C6589', 'cterm': '96' },
-\ 'cyan':      { 'gui': '#7EC7D8', 'cterm': '116' },
+\ 'black':        { 'gui': '#0C0C0C', 'cterm': '232' },
+\ 'darkgray':     { 'gui': '#595455', 'cterm': '59'  },
+\ 'lightgray':    { 'gui': '#BCB09C', 'cterm': '145' },
+\ 'white':        { 'gui': '#F7EFE3', 'cterm': '230' },
+\ 'red':          { 'gui': '#B23E52', 'cterm': '131' },
+\ 'lightred':     { 'gui': '#B15C65', 'cterm': '132' },
+\ 'green':        { 'gui': '#8CB155', 'cterm': '107' },
+\ 'lightgreen':   { 'gui': '#9BCF97', 'cterm': '150' },
+\ 'yellow':       { 'gui': '#D9972F', 'cterm': '172' },
+\ 'lightyellow':  { 'gui': '#F3F47F', 'cterm': '228' },
+\ 'blue':         { 'gui': '#6C9BD2', 'cterm': '74'  },
+\ 'lightblue':    { 'gui': '#9cc5e6', 'cterm': '153' },
+\ 'magenta':      { 'gui': '#8C6589', 'cterm': '96'  },
+\ 'lightmagenta': { 'gui': '#C08FB3', 'cterm': '139' },
+\ 'cyan':         { 'gui': '#7EC7D8', 'cterm': '116' },
+\ 'lightcyan':    { 'gui': '#BCE1DF', 'cterm': '152' },
 \}
 
 " If the value is true(1), it uses terminal emulator's colors.
@@ -90,7 +96,7 @@ endif
 " Vim UI
 call s:X('Conceal', 'darkgray', '', '')
 call s:X('Cursor', '', '', 'reverse')
-hi CursorLine ctermfg=NONE ctermbg=233 guifg=NONE guibg=#121212 cterm=NONE gui=NONE
+hi CursorLine ctermfg=NONE ctermbg=234 guifg=NONE guibg=#1c1c1c cterm=NONE gui=NONE
 call s:X('Directory', 'cyan', '', '')
 call s:X('DiffAdd', 'green', '', '')
 call s:X('DiffChange', 'blue', '', '')
@@ -101,13 +107,13 @@ call s:X('Folded', 'white', 'darkgray', '')
 call s:X('IncSearch', '', 'white', '')
 call s:X('Search', '', 'lightgray', '')
 call s:X('LineNr', 'lightgray', '', '')
-hi CursorLineNr ctermfg=247 ctermbg=233 guifg=#a29a8f guibg=#121212 cterm=NONE gui=NONE
+hi CursorLineNr ctermfg=145 ctermbg=234 guifg=#BCB09C guibg=#1c1c1c cterm=NONE gui=NONE
 call s:X('MatchParen', '', '', 'reverse')
 hi link ModeMsg Normal
 call s:X('MoreMsg', 'green', '', '')
 call s:X('NonText', 'darkgray', '', '')
 call s:X('Pmenu', 'white', 'darkgray', '')
-call s:X('PmenuSel', 'darkgray', 'white', '')
+call s:X('PmenuSel', 'black', 'white', '')
 call s:X('PmenuSbar', 'darkgray', 'darkgray', '')
 call s:X('PmenuThumb', 'white', 'white', '')
 call s:X('Question', 'green', '', '')
@@ -124,27 +130,27 @@ call s:X('WildMenu', 'white', 'darkgray', '')
 
 
 " syntax highlights
-hi Comment ctermfg=241 ctermbg=NONE guifg=#626262 guibg=NONE cterm=NONE gui=NONE
+call s:X('Comment', 'darkgray', '', '')
 call s:X('Constant', 'red', '', '')
 call s:X('String', 'cyan', '', '')
-call s:X('Character', 'yellow', '', '')
+call s:X('Character', 'blue', '', '')
 call s:X('Number', 'red', '', '')
 call s:X('Boolean', 'red', '', '')
 
-call s:X('Identifier', 'green', '', '')
-call s:X('Function', 'blue', '', '')
+call s:X('Identifier', 'yellow', '', '')
+call s:X('Function', 'green', '', '')
 
-call s:X('Statement', 'magenta', '', '')
+call s:X('Statement', 'lightcyan', '', '')
 call s:X('Operator', 'lightgray', '', '')
 
-call s:X('PreProc', 'magenta', '', '')
-call s:X('Type', 'yellow', '', '')
+call s:X('PreProc', 'lightmagenta', '', '')
+call s:X('Type', 'lightyellow', '', '')
 call s:X('Special', 'lightgray', '', '')
 
 call s:X('Underlined', '', '', 'underline')
 call s:X('Ignore', 'darkgray', '', '')
 call s:X('Error', 'red', '', '')
-call s:X('Todo', '', 'yellow', '')
+call s:X('Todo', 'darkgray', 'lightyellow', '')
 
 " diff
 hi link diffAdded DiffAdd
@@ -171,7 +177,7 @@ call s:X('rubyModule', 'green', '', '')
 call s:X('rubyDefine', 'cyan', '', '')
 hi link rubyClassVariable rubyClass
 call s:X('rubyInstanceVariable', 'blue', '', '')
-hi rubySymbol ctermfg=109 ctermbg=NONE guifg=#7fabb6 guibg=NONE cterm=NONE gui=NONE
+call s:X('rubySymbol', 'lightblue', '', '')
 
 " Erlang
 hi link erlangAtom rubySymbol

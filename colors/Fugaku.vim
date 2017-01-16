@@ -140,7 +140,7 @@ call s:X('Boolean', 'red', '', '')
 call s:X('Identifier', 'yellow', '', '')
 call s:X('Function', 'green', '', '')
 
-call s:X('Statement', 'lightcyan', '', '')
+call s:X('Statement', 'lightblue', '', '')
 call s:X('Operator', 'lightgray', '', '')
 
 call s:X('PreProc', 'lightmagenta', '', '')
@@ -177,7 +177,7 @@ call s:X('rubyModule', 'green', '', '')
 call s:X('rubyDefine', 'cyan', '', '')
 hi link rubyClassVariable rubyClass
 call s:X('rubyInstanceVariable', 'blue', '', '')
-call s:X('rubySymbol', 'lightblue', '', '')
+call s:X('rubySymbol', 'lightgreen', '', '')
 
 " Erlang
 hi link erlangAtom rubySymbol

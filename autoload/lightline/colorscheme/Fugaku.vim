@@ -1,5 +1,5 @@
 let s:black     = [ '#0C0C0C', 232 ]
-let s:darkgray  = [ '#595455', 59 ]
+let s:darkgray  = [ '#595455', 59  ]
 let s:lightgray = [ '#BCB09C', 145 ]
 let s:white     = [ '#F7EFE3', 230 ]
 let s:red       = [ '#B23E52', 131 ]
@@ -7,7 +7,7 @@ let s:green     = [ '#8CB155', 107 ]
 let s:yellow    = [ '#D9972F', 172 ]
 let s:blue      = [ '#6C9BD2', 74  ]
 let s:magenta   = [ '#8C6589', 96  ]
-let s:cyan      = [ '#7EC7D8', 116  ]
+let s:cyan      = [ '#7EC7D8', 116 ]
 
 
 let s:p = {'normal': {},  'inactive': {},  'insert': {},  'replace': {},  'visual': {},  'tabline': {}}

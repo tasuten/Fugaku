@@ -2,12 +2,12 @@
 
 body {
   font-family: 'Droid Sans', sans-serif;
-  color: #a29a8f; /* lightgray */
-  background-color: #0d0d0d; /* black */
+  color: #BCB09C; /* lightgray */
+  background-color: #0C0C0C; /* black */
 }
 
 a {
-  color: #e6bb2e; /* yellow */
+  color: #D9972F; /* yellow */
   text-decoration: none;
 }
 a:hover {
@@ -15,7 +15,7 @@ a:hover {
 }
 
 strong {
-  color: #f5efd9; /* white */
+  color: #F7EFE3; /* white */
   font-weight: normal;
 }
 
@@ -50,7 +50,7 @@ main {
 }
 
 main > h2 {
-  color: #f5efd9; /* white */
+  color: #F7EFE3; /* white */
   margin-top: 2em;
 }
 
@@ -82,13 +82,13 @@ ul#palette li#black:before {
   content: '\25a1'; /* empty square */
   font-size: 170%;
 }
-ul#palette li#darkgray { color: #3f493e; }
-ul#palette li#lightgray { color: #a29a8f; }
-ul#palette li#white { color: #f5efd9; }
-ul#palette li#red { color: #ab4645; }
-ul#palette li#green { color: #8a9c48; }
-ul#palette li#yellow { color: #e6bb2e; }
-ul#palette li#blue { color: #557c9b; }
-ul#palette li#magenta { color: #574376; }
-ul#palette li#cyan { color: #42b1e6; }
+ul#palette li#darkgray { color: #595455; }
+ul#palette li#lightgray { color: #BCB09C; }
+ul#palette li#white { color: #F7EFE3; }
+ul#palette li#red { color: #B23E52; }
+ul#palette li#green { color: #8CB155; }
+ul#palette li#yellow { color: #D9972F; }
+ul#palette li#blue { color: #6C9BD2; }
+ul#palette li#magenta { color: #8C6589; }
+ul#palette li#cyan { color: #7EC7D8; }
 

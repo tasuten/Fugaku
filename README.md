@@ -1,7 +1,7 @@
 # Fugaku
 The colorscheme using Japanese Traditional Colors
 
-<!--You can see screenshots on [GitHub Pages](http://tasuten.github.io/Fugaku/)-->
+You can see screenshots on [GitHub Pages](http://tasuten.github.io/Fugaku/)
 
 ## What's the meaning of "Fugaku" ?
 **Fugaku** (富嶽) is another name of Mt. Fuji.
@@ -56,7 +56,7 @@ let g:fugaku_use_terminal_background_color = 1
 ```
 
 ##### Using termianl emulator's color palette
-If you'd like to use truely same color in terminal emulator and GVim,
+If you'd like to use truely same color in Vim-256color and GVim,
 and you use iTerm2 colorscheme, use this option.
 
 ``` vim

@@ -3,6 +3,8 @@ The colorscheme using Japanese Traditional Colors
 
 You can see screenshots on [GitHub Pages](https://tasuten.github.io/Fugaku/)
 
+**2017-03-30: No longer, I'm not using this, I'm using an other. I'll accept pullreqs, but I recommend to use other colorschemes or fork this colorscheme if you wanna use maintained colorschemes.**
+
 ## What's the meaning of "Fugaku" ?
 **Fugaku** (富嶽) is another name of Mt. Fuji.
 
